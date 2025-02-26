@@ -53,6 +53,7 @@ public:
         submitBtn = new QPushButton(centralwidget);
         submitBtn->setObjectName("submitBtn");
         submitBtn->setGeometry(QRect(490, 190, 80, 24));
+        submitBtn->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         formLayoutWidget = new QWidget(centralwidget);
         formLayoutWidget->setObjectName("formLayoutWidget");
         formLayoutWidget->setGeometry(QRect(150, 100, 421, 91));

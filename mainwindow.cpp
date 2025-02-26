@@ -6,6 +6,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     connect(ui->submitBtn, &QPushButton::clicked, this, &MainWindow::onButtonClicked);
 }
 
@@ -27,7 +28,7 @@ void processClient(client&& _client, QWidget* parent)
 
     QMessageBox::information(parent, "Dados do cliente", ClientData);
 
-};
+}
 
 void MainWindow::onButtonClicked()
 {
